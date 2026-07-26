@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+app.use(express.json());
+
 // Our in-memory task list
 const tasks = [
   {
@@ -38,6 +40,30 @@ app.get('/health', (req, res) => {
 
 app.get('/tasks', (req, res) => {
   res.json(tasks);
+});
+
+app.post('/tasks', (req, res) => {
+  const { title } = req.body;
+
+  if (!title) {
+    return res.status(400).json({
+      error: "Title is required"
+    });
+  }
+
+  const id = tasks[tasks.length - 1].id + 1;
+
+
+  const task = {
+    id,
+    title,
+    done: false
+  };
+
+  tasks.push(task);
+
+  return res.status(201).json(task);
+
 });
 
 
