@@ -1,4 +1,4 @@
-# Task API
+# Task Management REST API
 
 A simple RESTful Task Management API built with **Node.js**, **Express.js**, and **Swagger UI**.
 
