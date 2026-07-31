@@ -33,13 +33,13 @@ This project demonstrates the complete **CRUD (Create, Read, Update, Delete)** l
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ola-space/myapp.git
+git clone https://github.com/ola-space/task-management-rest-api.git
 ```
 
 ### 2. Navigate into the project folder
 
 ```bash
-cd myapp
+cd task-management-rest-api
 ```
 
 ### 3. Install the project dependencies
@@ -170,7 +170,7 @@ http://localhost:3000/docs
 ## Project Structure
 
 ```text
-myapp/
+task-management-rest-api/
 ├── node_modules/
 ├── index.js
 ├── openapi.json
@@ -185,7 +185,7 @@ myapp/
 
 GitHub Repository:
 
-https://github.com/ola-space/myapp
+https://github.com/ola-space/task-management-rest-api
 
 ---
 
